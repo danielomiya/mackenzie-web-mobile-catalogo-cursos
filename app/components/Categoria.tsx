@@ -1,6 +1,6 @@
 interface CategoriaProps {
-    titulo: string;
-    children: React.ReactNode;
+  titulo: string;
+  children: React.ReactNode;
 }
 
 export default function Categoria({ titulo, children }: CategoriaProps) {

@@ -2,10 +2,17 @@ interface CursoCardProps {
   nome: string;
   professor: string;
   cargaHoraria: number;
-  nivel: 'Iniciante' | 'Intermediário' | 'Avançado';
+  nivel: string;
+  modalidade: 'Presencial' | 'EAD';
 }
 
-export default function CursoCard({ nome, professor, cargaHoraria, nivel }: CursoCardProps) {
+export default function CursoCard({
+  nome,
+  professor,
+  cargaHoraria,
+  nivel,
+  modalidade,
+}: CursoCardProps) {
   return (
     <div className="curso-card">
       <h3 className="curso-nome">{nome}</h3>
@@ -16,6 +23,10 @@ export default function CursoCard({ nome, professor, cargaHoraria, nivel }: Curs
       <p className="curso-info">
         <strong>Carga Horária:</strong>
         {cargaHoraria} horas
+      </p>
+      <p className="curso-info">
+        <strong>Modalidade:</strong>
+        {modalidade}
       </p>
       <span className="tag-nivel">{nivel}</span>
     </div>

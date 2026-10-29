@@ -24,6 +24,13 @@
       "react": "recommended"
     }
   },
+  "javascript": {
+    "formatter": {
+      "enabled": true,
+      "quoteStyle": "single",
+      "jsxQuoteStyle": "double"
+    }
+  },
   "assist": {
     "actions": {
       "source": {

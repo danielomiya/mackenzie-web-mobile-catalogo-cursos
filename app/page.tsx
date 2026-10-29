@@ -1,5 +1,5 @@
-import Categoria from "./components/Categoria";
-import CursoCard from "./components/CursoCard";
+import Categoria from './components/Categoria';
+import CursoCard from './components/CursoCard';
 
 export default function Home() {
   return (
@@ -11,12 +11,14 @@ export default function Home() {
           professor="Alcides"
           cargaHoraria={40}
           nivel="Iniciante"
+          modalidade="EAD"
         />
         <CursoCard
           nome="APIs em Node.js e NestJS"
           professor="Alexandre"
           cargaHoraria={60}
           nivel="Intermediário"
+          modalidade="EAD"
         />
       </Categoria>
 
@@ -26,23 +28,26 @@ export default function Home() {
           professor="Alcides"
           cargaHoraria={80}
           nivel="Avançado"
+          modalidade="Presencial"
         />
         <CursoCard
           nome="Lógica em Python e C++"
           professor="Debora"
           cargaHoraria={40}
           nivel="Iniciante"
+          modalidade="EAD"
         />
         <CursoCard
           nome="Containers com Docker"
           professor="Thiago"
           cargaHoraria={30}
           nivel="Intermediário"
+          modalidade="EAD"
         />
       </Categoria>
 
       <Categoria titulo="Cursos de Extensão">
-        <p style={{ color: "#666", gridColumn: "1 / -1" }}>
+        <p style={{ color: '#666', gridColumn: '1 / -1' }}>
           As matrículas para os cursos de extensão e maratona de programação
           abrem no próximo semestre. Fiquem atentos!
         </p>

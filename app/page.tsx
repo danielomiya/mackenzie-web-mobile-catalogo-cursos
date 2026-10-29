@@ -3,7 +3,7 @@ import CursoCard from './components/CursoCard';
 
 export default function Home() {
   return (
-    <main>
+    <main className="container">
       <h1 className="titulo-principal">Catálogo de Cursos de Computação</h1>
       <Categoria titulo="Desenvolvimento Web e Mobile">
         <CursoCard
